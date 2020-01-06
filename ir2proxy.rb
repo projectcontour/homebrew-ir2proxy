@@ -2,16 +2,16 @@
 class Ir2proxy < Formula
   desc "A tool to convert Contour's IngressRoute resources to HTTPProxy resources."
   homepage "https://github.com/projectcontour/ir2proxy"
-  version "0.2.0"
+  version "0.2.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/projectcontour/ir2proxy/releases/download/v0.2.0/ir2proxy_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "5d3ec3a7a383b085dd384e22abed5e4d8ae751b738634122799435ae2881c142"
+    url "https://github.com/projectcontour/ir2proxy/releases/download/v0.2.2/ir2proxy_0.2.2_Darwin_x86_64.tar.gz"
+    sha256 "244d112871e6e4f08d2939e97cb18df62e8555fc897e458b5e1c8b3354435668"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/projectcontour/ir2proxy/releases/download/v0.2.0/ir2proxy_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "57a4893a8eda1c9c9a14d35ff0ac3faff9d6fb6e11ba4d431362ef01dedf286d"
+      url "https://github.com/projectcontour/ir2proxy/releases/download/v0.2.2/ir2proxy_0.2.2_Linux_x86_64.tar.gz"
+      sha256 "43bc62d537ceb0beb90d5300be021e609267f535e6971546ca7375e3346d9489"
     end
   end
 
